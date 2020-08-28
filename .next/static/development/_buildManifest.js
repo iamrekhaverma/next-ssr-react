@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST = {"/Spacex":["static\u002Fcss\u002Fstyles.chunk.css","static\u002Fchunks\u002Fstyles.js","static\u002Fchunks\u002Fpages\u002FSpacex.js"],"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],"/querytest":["static\u002Fchunks\u002Fpages\u002Fquerytest.js"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

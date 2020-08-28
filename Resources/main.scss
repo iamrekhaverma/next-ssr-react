@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #dddd;
+  overflow-x: hidden;
+}
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  display: grid;
+}
+.header {
+  text-align: center;
+}
+
+.cards_item {
+  margin: 13px;
+  background: white;
+  justify-self: center;
+  margin-bottom: 10px;
+  padding: 19px;
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  .card_image {
+    background: #ddd;
+    text-align: center;
+  }
+  .card_content {
+    margin: 16px 0px;
+    line-height: 1.5rem;
+    letter-spacing: 0px;
+  }
+}
+
+.menu {
+  .center {
+    text-align: center;
+    border-bottom: 1px solid;
+    max-width: 50%;
+    margin: auto;
+    padding-top: 14px;
+  }
+  background: #ffffff;
+  input[type="radio"] {
+    visibility: hidden;
+  }
+  input:checked + label {
+    background: green;
+    opacity: 1;
+  }
+  label {
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 6px;
+    opacity: 0.5;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    .grid-item {
+      justify-self: center;
+      margin: 7px;
+      line-height: 2em;
+    }
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.spacex-card {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  width: 100%;
+  justify-content: space-between;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 100%;
+  padding: 20px;
+}
+
+article {
+  float: left;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav {
+    width: 30%;
+  }
+  .article {
+    width: 70%;
+  }
+  .column {
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .spacex-card {
+    width: unset;
+  }
+  .cards_item {
+    width: 230px;
+    height: 404px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* For desktop: */
+  .article {
+    width: 70%;
+  }
+  .nav {
+    width: 30%;
+  }
+  .column {
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .spacex-card {
+    width: unset !important;
+  }
+  .cards_item {
+    width: 230px;
+    height: 404px;
+  }
+}
